@@ -1,0 +1,55 @@
+version: "3.8"
+
+networks:
+  app:
+
+services:
+  db:
+    container_name: db
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB= default_database
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - '6666:6666'
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks:
+      - app
+
+  php:
+    container_name: php-fpm
+    build:
+      context: ./docker/php
+      dockerfile: ./Dockerfile
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./:/var/www/projectInfra
+    depends_on:
+      - db
+    networks:
+      - app
+
+
+  nginx:
+    container_name: nginx
+    image: nginx:stable-alpine
+    build:
+      context: ./docker/nginx
+    ports:
+      - "8888:80"
+    depends_on:
+      - php
+      - db
+    volumes:
+      - ./etc/nginx/default.conf:/nginx/conf.d/default.conf
+      - ./etc/nginx/log:/var/log/nginx
+      - ./:/var/www/projectInfra
+    networks:
+      - app
+
+volumes:
+  db:

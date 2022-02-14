@@ -21,14 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="da7ed849-54ad-41f8-a55c-4e569e396e88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -162,7 +161,9 @@
       <option name="presentableId" value="Default" />
       <updated>1644848630325</updated>
       <workItem from="1644848633880" duration="598000" />
-      <workItem from="1644849258351" duration="4765000" />
+      <workItem from="1644849258351" duration="6464000" />
+      <workItem from="1644869648863" duration="2689000" />
+      <workItem from="1644873192318" duration="9181000" />
     </task>
     <servers />
   </component>
@@ -182,10 +183,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1644853599512">
+    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1644876895032">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1644853599512" />
+    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser/1920.588.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1644876895032" />
     <state x="753" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1644852117462">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -194,13 +196,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1644853953975" />
-    <state x="676" y="239" key="NewPhpClassDialog" timestamp="1644853640070">
+    <state x="676" y="239" key="NewPhpClassDialog" timestamp="1644880979198">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="676" y="239" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1644853640070" />
+    <state x="676" y="239" key="NewPhpClassDialog/1920.588.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1644880979198" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1644849391954">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1644849391954" />
+    <state x="616" y="238" key="run.anything.popup" timestamp="1644877157095">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="616" y="238" key="run.anything.popup/1920.588.1920.1032/0.0.1920.1032@0.0.1920.1032" timestamp="1644877157095" />
   </component>
 </project>
