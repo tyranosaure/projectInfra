@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7ed849-54ad-41f8-a55c-4e569e396e88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644848630325</updated>
       <workItem from="1644848633880" duration="598000" />
-      <workItem from="1644849258351" duration="3825000" />
+      <workItem from="1644849258351" duration="4765000" />
     </task>
     <servers />
   </component>
@@ -189,18 +182,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1644850502448">
+    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1644853599512">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1644850502448" />
+    <state x="728" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1644853599512" />
     <state x="753" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1644852117462">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="753" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1644852117462" />
-    <state x="676" y="239" key="NewPhpClassDialog" timestamp="1644852056234">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1644853953975">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="676" y="239" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1644852056234" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1644853953975" />
+    <state x="676" y="239" key="NewPhpClassDialog" timestamp="1644853640070">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="676" y="239" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1644853640070" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1644849391954">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
