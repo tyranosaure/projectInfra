@@ -1,5 +1,4 @@
 security:
-
     providers:
         my_ldap:
             ldap:
@@ -9,7 +8,6 @@ security:
                 search_password: passwordZ
                 default_roles: ROLE_USER
                 uid_key: uid
-                extra_fields: [ 'email' ]
 
     firewalls:
         dev:
@@ -17,11 +15,16 @@ security:
             security: false
 
         main:
+            logout:
+                path: /logout
             stateless: true
-            http_basic_ldap:
+            form_login_ldap:
                 service: Symfony\Component\Ldap\Ldap
-                dn_string: 'uid={username},dc=example,dc=com'
-
+                dn_string: 'dc=example,dc=com'
+                query_string: '(&(uid={username})(memberOf=cn=users,ou=Services,dc=example,dc=com))'
+                search_dn: '...'
+                search_password: 'the-raw-password'
+                login_path: /login
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }

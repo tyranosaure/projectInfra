@@ -1,5 +1,9 @@
 import { Controller } from '@hotwired/stimulus';
 
+
+require("../styles/app.css");
+
+
 /*
  * This is an example Stimulus controller!
  *

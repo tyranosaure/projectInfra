@@ -6,7 +6,6 @@ namespace App\Controller;
 
 use App\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -15,7 +14,6 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class AuthentificationController extends AbstractController
 {
-
     /**
      * @Route ("/login")
      *
@@ -26,8 +24,8 @@ class AuthentificationController extends AbstractController
         // create user form
         $form = $this->createForm(UserType::class);
 
-        $this->render("login.html.twig", [
-            "form" => $form,
+        return $this->render("login.html.twig", [
+            "form" => $form->createView(),
         ]);
     }
 

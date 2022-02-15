@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Form;
 
 use App\Entity\LdapUser;
-use Doctrine\DBAL\Types\TextType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -26,18 +26,12 @@ class UserType extends AbstractType
                "required" => true,
                 "label" => "Mot de passe",
             ]);
-
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'allowed_states' => null,
+            'data_class' => UserType::class,
         ]);
-    }
-
-    public function getParent(): string
-    {
-        return UserType::class;
     }
 }
