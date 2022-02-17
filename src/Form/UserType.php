@@ -20,11 +20,15 @@ class UserType extends AbstractType
         $builder
             ->add("username", TextType::class, [
             "required" => true,
-            "label" => "Nom d'utilisateur",
+            "attr" => [
+                "placeholder" => "Nom d'utilisateur",
+                ],
             ])
             ->add("password", TextType::class, [
                "required" => true,
-                "label" => "Mot de passe",
+                "attr" => [
+                    "placeholder" => "Mot de passe",
+                ],
             ]);
     }
 

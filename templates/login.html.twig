@@ -1,16 +1,15 @@
 {% extends "base.html.twig" %}
+{% block body %}
+    <div class="container">
+        {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+        <form action="{{ path('app_authentification_login') }}" method="post" class="form-login">
+            <input type="text" id="username" name="_username" placeholder="Nom d'utilisateur" value="{{ lastUsername }}" />
+            <input type="password" id="password" name="_password" placeholder="Mot de passe"/>
 
-{%  block body%}
-    {{ form_start(form) }}
+            <button type="submit" class="ui button">Se connecter</button>
+        </form>
+    </div>
 
-    {{ form_label(form.username) }}
-    {{ form_widget(form.username, {'attr' : { 'class': 'input'}}) }}
-
-    {{ form_label(form.password) }}
-
-    {{ form_widget(form.password) }}
-
-    <input type="submit" placeholder="Se connecter">
-
-    {{ form_end(form) }}
 {% endblock %}

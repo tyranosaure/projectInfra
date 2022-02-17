@@ -20,8 +20,10 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
-    .addEntry('hello_controler')
+    .addEntry('app', './assets/js/pages/app.js')
+    // add semantic-ui entries
+    .addEntry('semantic_styles', './node_modules/semantic-ui/dist/semantic.min.css')
+    .addEntry('semantic_javascripts', './node_modules/semantic-ui/dist/semantic.min.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')

@@ -3,11 +3,11 @@ security:
         my_ldap:
             ldap:
                 service: Symfony\Component\Ldap\Ldap
-                base_dn: dc=example,dc=com
-                search_dn: "cn=read-only-admin,dc=example,dc=com"
-                search_password: passwordZ
+                base_dn: "dc=fr,dc=lechatelet,dc=local"
+                search_dn: "cn=users,ou=soignants dc=fr,dc=lechatelet,dc=local"
+                search_password: 'uid={sAMAccountName}'
                 default_roles: ROLE_USER
-                uid_key: uid
+                uid_key: uid={username}
 
     firewalls:
         dev:
@@ -15,16 +15,24 @@ security:
             security: false
 
         main:
+            provider: my_ldap
+            pattern: ^/
             logout:
-                path: /logout
+                path: app_authentification_logout
+                target: /login
             stateless: true
             form_login_ldap:
                 service: Symfony\Component\Ldap\Ldap
                 dn_string: 'dc=example,dc=com'
-                query_string: '(&(uid={username})(memberOf=cn=users,ou=Services,dc=example,dc=com))'
-                search_dn: '...'
-                search_password: 'the-raw-password'
-                login_path: /login
+                query_string: '(&(uid={sAMAccountName})(memberOf=cn=users,ou=soignants,dc=fr,dc=lechatelet,dc=local))'
+                search_dn: "ou=soignants dc=fr,dc=lechatelet,dc=local"
+                search_password: 'uid={sAMAccountName}'
+                login_path: app_authentification_login
+                check_path: app_authentification_login
+            two_factor:
+                auth_form_path: 2fa_login
+                check_path: 2fa_login_check
+
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/login, roles: PUBLIC_ACCESS }
+        - { path: ^/, roles: [ROLE_USER, IS_AUTHENTICATED_FULLY] }

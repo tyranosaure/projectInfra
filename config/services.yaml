@@ -1,5 +1,7 @@
 
 parameters:
+    ldap_host: '%env(LDAP_HOST)%'
+    ldap_connection: '%env(LDAP_CONNECTION_STRING)%'
 
 services:
     _defaults:
@@ -19,7 +21,7 @@ services:
             - ldap
     Symfony\Component\Ldap\Adapter\ExtLdap\Adapter:
         arguments:
-            - host: my-server
+            - host: ldap_connection
               port: 389
               encryption: tls
               options:
