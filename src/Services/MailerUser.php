@@ -9,7 +9,9 @@ use Symfony\Component\Mailer\Mailer;
 /**
  * Class MailerUser
  */
-class MailerUser extends Mailer
+class MailerUser
+
 {
+
 
 }
